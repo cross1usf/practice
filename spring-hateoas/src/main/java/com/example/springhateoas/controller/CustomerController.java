@@ -21,7 +21,7 @@ public class CustomerController {
 
     @GetMapping("/{customerId}")
     public String getCustomerById(@PathVariable String customerId) {
-        return new String("John Wick");
+        return "John Wick";
 
     }
 
