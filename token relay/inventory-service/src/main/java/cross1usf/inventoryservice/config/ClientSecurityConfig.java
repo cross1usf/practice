@@ -19,4 +19,5 @@ public class ClientSecurityConfig implements RequestInterceptor {
         String token = jwtAuthenticationToken.getToken().getTokenValue();
         requestTemplate.header(HttpHeaders.AUTHORIZATION,"Bearer " + token);
     }
+
 }
